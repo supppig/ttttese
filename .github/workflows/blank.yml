@@ -42,7 +42,6 @@ jobs:
 
       - name: 加入额外插件
         run: |
-          cd lede
           . ./extra.sh
                 
       - name: 更新feeds
