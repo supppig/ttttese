@@ -51,4 +51,7 @@ CONFIG_PACKAGE_luci-theme-freifunk-generic=y
 CONFIG_PACKAGE_luci-theme-material=y
 CONFIG_PACKAGE_luci-theme-netgear=y
 
-CONFIG_PACKAGE_ipv6helper
+CONFIG_PACKAGE_ipv6helper=y
+
+
+
