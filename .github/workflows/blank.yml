@@ -55,7 +55,7 @@ jobs:
           #cp -f config.txt ./lede/.config
           cd lede
           echo "---------------------"
-          cat .config
+          #cat .config
           echo "---------------------"
           (echo -e \\t\\t\\t;echo;echo;echo -e \\t) | make menuconfig
 
