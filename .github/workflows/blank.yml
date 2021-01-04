@@ -54,7 +54,7 @@ jobs:
         run: |
           cd lede
           make defconfig
-          . ../fixconfig.sh ./config ../config.txt
+          . ../fixconfig.sh ./.config ../config.txt
 
       - name: 预下载
         run: |
