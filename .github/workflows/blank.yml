@@ -40,9 +40,9 @@ jobs:
       - name: 克隆代码
         run: git clone https://github.com/coolsnowwolf/lede.git
 
-      #- name: 加入额外插件
-      #  run: |
-      #    . ./extra.sh
+      - name: 加入额外插件
+        run: |
+          . ./extra.sh
                 
       - name: 更新feeds
         run: |
@@ -52,13 +52,9 @@ jobs:
 
       - name: 创建配置文件
         run: |
-          #cp -f config.txt ./lede/.config
           cd lede
           make defconfig
-          echo "---------------------"
-          cat .config
-          echo "---------------------"
-          (echo -e \\t\\t\\t;echo;echo;echo -e \\t) | make menuconfig
+          . ../fixconfig.sh ./config ../config.txt
 
       - name: 预下载
         run: |
